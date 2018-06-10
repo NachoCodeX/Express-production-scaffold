@@ -1,2 +1,7 @@
 node_modules
-src
+app.js
+.vscode
+models
+server.js
+routes
+controllers

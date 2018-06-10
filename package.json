@@ -10,7 +10,8 @@
     "dev": "nodemon --exec 'babel-node' server",
     "clean": "rm -rf build/ && mkdir build",
     "public":"cp -R ./public ./build/",
-    "build": "yarn clean && babel -d ./build *.js routes/*.js controllers/*.js -s && yarn public",
+    "build-dev": "yarn clean && babel -d ./build *.js routes/*.js controllers/*.js models/*.js -s && yarn public",
+    "build-prod": "yarn clean && babel --minified -d ./build *.js routes/*.js controllers/*.js models/*.js -s && yarn public",
     "start": "node ./build/server.js"
   },
   "dependencies": {
