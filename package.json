@@ -7,9 +7,10 @@
     "node":"10.3.0"
   },
   "scripts": {
-    "dev": "nodemon --exec 'babel-node' ./src/server",
+    "dev": "nodemon --exec 'babel-node' server",
     "clean": "rm -rf build/ && mkdir build",
-    "build": "yarn clean && babel -d ./build ./src/ -s",
+    "public":"cp -R ./public ./build/",
+    "build": "yarn clean && babel -d ./build *.js routes/*.js controllers/*.js -s && yarn public",
     "start": "node ./build/server.js"
   },
   "dependencies": {
