@@ -1,2 +1,0 @@
-'use strict';Object.defineProperty(exports,'__esModule',{value:true});exports.testController=testController;var _user=require('../models/user');var _user2=_interopRequireDefault(_user);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj}}function testController(req,res){var user=new _user2.default({firstName:'Jesus',lastName:'Castillo'});console.log('AAAAAAAAAAAA');console.log(user);return res.status(200).send('TEST CONTROLLER')}
-//# sourceMappingURL=api.js.map

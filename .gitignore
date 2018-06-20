@@ -1,7 +1,4 @@
 node_modules
-app.js
+build
 .vscode
-models
-server.js
-routes
-controllers
+yarn.lock
